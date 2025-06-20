@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mini Jogo de Truco Paulista</title>
+    <link rel="icon" href="../Imagemapp.jpg">
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <h1>🎮 Truco Paulista (Demo)</h1>
+    <div class="game-box">
+        <p class="status" id="status">Clique para jogar uma rodada!</p>
+
+        <div class="card" id="viraCard">🃏 Vira: -</div>
+        <div class="card" id="manilhaInfo">💥 Manilhas: -</div>
+
+        <div class="player-bot-cards">
+            <div class="card" id="playerCard">🧑 Sua carta: -</div>
+            <div class="card" id="botCard">🤖 Carta do Bot: -</div>
+        </div>
+        <button onclick="playRound()" id="playBtn">Jogar Rodada</button>
+        <button onclick="resetGame()" id="resetBtn" class="main-button">🔄 Jogar Novamente</button>
+
+        <div class="score" id="roundScore">Rodadas: Você 0 x 0 Bot</div>
+    </div>
+
+    <a href="../index.html" class="button">🔙 Voltar para o início</a>
+    <a href="../naipes/regras_detalhadas.html" class="button-primary-button">
+        👉 Ver Naipes, Ordem das Cartas e Resumo das Regras
+    </a>
+
+<script src="scripts.js"></script>
+</body>
+</html>

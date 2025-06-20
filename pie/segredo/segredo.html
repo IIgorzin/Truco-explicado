@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-1.0">
+    <title>Página Secreta</title>
+    <link rel="icon" href="../Imagemapp.jpg">
+    <link rel="stylesheet" href="styles5.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scriptstailwind.js"></script>
+</head>
+<body class="bg-background-dark text-gray-100 min-h-screen flex flex-col items-center justify-center p-6">
+
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-8 text-center drop-shadow-lg text-button-default">
+        Seja bem-vindo(a) à<br>
+       <i>página secreta do código do aplicativo.</i>
+    </h1>
+
+    <div class="relative bg-card-bg rounded-2xl shadow-xl p-6 w-full max-w-2xl border border-card-bg transition-all duration-300 ease-in-out transform hover:scale-[1.01]">
+        <div id="fileCard"
+            class="flex items-center justify-between cursor-pointer p-4 bg-button-default rounded-xl mb-4 shadow-md hover:bg-button-default/90 transition duration-200">
+            <h2 id="fileName" class="text-2xl font-semibold text-white">
+                Nenhum arquivo encontrado
+            </h2>
+
+            <svg id="arrowIcon"
+                class="w-6 h-6 text-white transition-transform duration-300"
+                fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </div>
+
+        <div id="codeDisplay" class="hidden bg-background-dark rounded-xl p-4 mt-4 overflow-x-auto border border-gray-700 shadow-inner">
+            <pre><code id="codeContent" class="language-xml text-green-300 text-sm md:text-base"></code></pre>
+        </div>
+
+        <div class="flex justify-center mt-6">
+            <button id="nextFileButton"
+                class="bg-button-default hover:bg-button-default/90 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 flex items-center">
+                Próximo Arquivo
+                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <a href="../apk/Siteapk.html" class="baixar">Baixe-o agora</a>
+
+    <div class="mt-8 flex justify-center w-full max-w-2xl">
+        <a href="../index.html" class="back">🔙 Voltar para o início</a>
+    </div>
+
+    <footer class="mt-8 text-gray-400 text-sm text-center">
+        Desenvolvido com carinho.
+    </footer>
+
+    <script src="scriptdados.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to top left, #332B2B, #A04035); 
+    text-align: center;
+    padding: 30px;
+    color: #fef6e4; 
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #F41800; 
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.game-box {
+    background: rgba(255, 255, 255, 0.15); 
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 550px;
+    margin: 20px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.game-box .status {
+    margin: 20px 0;
+    font-size: 1.3rem;
+    min-height: 40px;
+    font-weight: bold;
+    color: #fef6e4;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.game-box .card {
+    background-color: #332B2B; 
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 15px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid #7A433D; 
+}
+
+.game-box .player-bot-cards {
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    margin-bottom: 20px; 
+}
+
+.game-box button {
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    background: linear-gradient(to right, #F41800, #A04035); 
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    width: 200px; 
+    min-height: 50px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.game-box button:hover {
+    background: linear-gradient(to right, #d11500, #8b372c);
+    transform: translateY(-3px);
+}
+
+#resetBtn {
+    display: none;  
+}
+
+.game-box .score {
+    font-size: 1.3rem;
+    margin-top: 25px;
+    font-weight: bold;
+    color: #fef6e4;
+}
+
+a {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    background-color: #F41800; 
+    color: white;
+    padding: 12px 22px;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #d11500;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+    .game-box .player-bot-cards {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .game-box .card {
+        margin: 10px 0; 
+    }
+    .game-box button {
+        width: 80%; 
+    }
+}

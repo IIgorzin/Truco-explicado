@@ -1,0 +1,160 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #332B2B, #7A433D);
+    color: #fef6e4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #A04035;
+    color: white;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+    padding: 30px 20px;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.rule {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-left: 10px solid #F41800;
+    border-radius: 12px;
+    margin: 25px 0;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-size: 1.15rem;
+    transition: transform 0.3s ease;
+}
+
+.rule:hover {
+    transform: translateY(-5px);
+}
+
+.rule strong {
+    color: #F41800;
+}
+
+.rule span.emoji {
+    font-size: 1.8rem;
+    margin-right: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+.primary-button {
+    background-color: #F41800;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #d11500;
+    transform: translateY(-3px);
+}
+
+.secondary-button {
+    background: linear-gradient(to right, #A04035, #7A433D);
+    color: white;
+    margin-left: 20px;
+}
+
+.secondary-button:hover {
+    background: linear-gradient(to right, #8b372c, #6c3a35);
+    transform: translateY(-3px);
+}
+
+footer {
+    background-color: #332B2B;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.install-apk-link {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    background-color: #F41800;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    z-index: 1100;
+    white-space: nowrap;
+    font-size: 1rem;
+}
+
+.install-apk-link:hover {
+    background-color: #d11500;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .rule {
+        font-size: 1rem;
+    }
+    .button {
+        font-size: 1rem;
+        padding: 12px 20px;
+        margin-top: 20px;
+        margin-left: 0;
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .secondary-button {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .install-apk-link {
+        top: 10px;
+        right: 10px;
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+}
