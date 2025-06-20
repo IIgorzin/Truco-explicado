@@ -17,3 +17,7 @@
 <h1>CLIQUE AQUI</h1>
 <p><a href="https://github.com/IIgorzin/Truco-explicado">Repositório do site / Website repository</a></p>
 <p><a href="https://github.com/IIgorzin/ProjetoJava">Repositório do app / App repository</a></p>
+
+<h1>
+ <a href="https://iigorzin.github.io/Truco-explicado/pie/index.html">SITE</a>
+</h1>
